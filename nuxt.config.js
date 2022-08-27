@@ -6,23 +6,26 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: '株式会社GENIT - アプリ/Web/プログラム/デザイン/音楽の制作会社',
+    title: '楽譜カラオケ：楽器演奏者向けの伴奏付き楽譜集アプリ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: '神戸のアプリ/Web/プログラム/デザイン/音楽の制作会社'
+        content: '楽譜カラオケ：楽器演奏者向けの伴奏付き楽譜集アプリ'
       },
-      { property: 'og:title', content: '株式会社GENIT' },
+      { property: 'og:title', content: '楽譜カラオケ' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://www.genit.jp/' },
-      { property: 'og:image', content: 'https://www.genit.jp/images/ogp.png' },
-      { property: 'og:site_name', content: '株式会社GENIT' },
+      { property: 'og:url', content: 'https://gakufu-karaoke.com/' },
+      {
+        property: 'og:image',
+        content: 'https://gakufu-karaoke.com/images/ogp.png'
+      },
+      { property: 'og:site_name', content: '楽譜カラオケ' },
       {
         property: 'og:description',
-        content: '神戸のアプリ/Web/プログラム/デザイン/音楽の制作会社'
+        content: '楽譜カラオケ：楽器演奏者向けの伴奏付き楽譜集アプリ'
       },
       { property: 'fb', content: '484405062242157' },
       { property: 'twitter:card', content: 'summary_large_image' }

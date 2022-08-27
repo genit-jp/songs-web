@@ -64,3 +64,17 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+public/*
+dist/*
+
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

@@ -15,7 +15,7 @@
           max-height="80"
           contain
         )
-      span.text-right ダウンロード無料(お試し版) / 有料会員：月額1200円
+      span.text-right.text-caption ダウンロード無料 / 有料会員:月額1200円
 </template>
 <script>
 export default {}

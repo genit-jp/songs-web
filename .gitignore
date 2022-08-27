@@ -66,17 +66,9 @@ node_modules/
 .env
 
 public/*
-dist/*
-
+!public/.keep
 node_modules
-
-# logs
 npm-debug.log
-
-# Nuxt build
 .nuxt
-
-# Nuxt generate
 dist
-
 static/sw.js

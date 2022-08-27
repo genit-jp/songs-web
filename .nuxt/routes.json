@@ -1,0 +1,23 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/Users/ryohorie/pj/songs/web/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_355c04b6"
+  },
+  {
+    "name": "termsofuse",
+    "path": "/termsofuse",
+    "component": "/Users/ryohorie/pj/songs/web/pages/termsofuse.vue",
+    "chunkName": "pages/termsofuse",
+    "_name": "_32eb2b06"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ryohorie/pj/songs/web/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5efd80a4"
+  }
+]

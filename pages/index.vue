@@ -10,7 +10,7 @@ v-layout(
     Article(
       description="ああああああああああああああああああああああああああああああああああああああああああああああ"
       image="/images/articles/demo.jpg")
-  Section(color="#F6F4F8" title="<span>テンポも変えて</span><span>ゆっくりから練習できる</span>")
+  Section(color="#F6F4F8" title="<span>テンポを変えて</span><span>ゆっくりから練習</span>")
     Article(
       description="ああああああああああああああああああああああああああああああああああああああああああああああ"
       image="/images/articles/tempo.jpg"

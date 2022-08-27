@@ -64,3 +64,11 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+public/*
+!public/.keep
+node_modules
+npm-debug.log
+.nuxt
+dist
+static/sw.js

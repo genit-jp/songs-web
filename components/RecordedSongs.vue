@@ -6,26 +6,37 @@
           width="100%"
           style="padding:2em"
           )
-    h3 後で見やすくする
-    div {{songs}}
+    div(v-for="(songs,category) in categoriedSongs" :key="category") 
+      h3 {{category}}
+      v-chip(color="primary" outlined style="margin: 2px;" v-for="(song,i) in songs" :key="i")
+        span.font-weight-bold {{song.title}}
+        span(v-if="song.subtitle && song.subtitle.length" style="margin-left: 4px;").text-caption {{`-${song.subtitle}-`}}
 </template>
 
 <script>
 export default {
-  props: {},
+  props: {
+    master: { type: Object, default: {} }
+  },
   data() {
     return {
       songs: ''
     }
   },
-  async mounted() {
-    const response = await this.$axios.$get(
-      'https://d269pef58q3jdf.cloudfront.net/v1/master.json'
-    )
-    const songTitles = response.songs.map(song => song.title)
-    this.songs = songTitles.join('/')
+  async mounted() {},
+  computed: {
+    categoriedSongs: function() {
+      const ret = {}
+      if (this.master.home_page_categories && this.master.songs) {
+        for (let category of this.master.home_page_categories) {
+          ret[category] = this.master.songs.filter(song =>
+            song.tags.includes(category)
+          )
+        }
+      }
+      return ret
+    }
   },
-  computed: {},
   methods: {}
 }
 </script>

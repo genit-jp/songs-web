@@ -1,12 +1,11 @@
 <template lang="pug">
   v-app
-    v-content
-      nuxt
+    nuxt
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,

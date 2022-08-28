@@ -15,7 +15,7 @@
           max-height="80"
           contain
         )
-      span.text-right.text-caption ダウンロード無料 / 有料会員:月額1200円
+      v-col.text-center.text-sm-body-1.text-caption(cols="12") ※ダウンロード無料 / 有料会員:月額1200円
 </template>
 <script>
 export default {}

@@ -1,7 +1,7 @@
 <template lang="pug">
   v-row(align="center" justify="center" style="margin:0; padding:0;")
     v-col.articleBox.text-body-1(cols="12" md="6" :order="order(0)") 
-      div {{description}}
+      div(v-html="description")
     v-col.articleBox(cols="12" md="6" :order="order(1)")
       v-img(:src="image")
 

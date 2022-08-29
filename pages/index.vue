@@ -24,14 +24,19 @@ v-layout(
       description="移調楽器の設定をすると、伴奏のキーは変更せずに、表示される楽譜のキーのみを変更することができます。"
       image="/images/articles/instruments.jpg"
       swap=true)
+  Section(color="white" title="<span>楽曲は続々追加！</span><span>リクエストも受付中！</span>")
+    Article(
+      description="あなたの演奏したい楽曲を是非教えて下さい！リクエストいただいた曲から日々続々と追加しています。"
+      image="/images/articles/request.png"
+      swap=false)
   //- Section(color="white" title="<span>演奏の録音・録画も</span><span>ボタン一つでかんたん</span>")
   //-   Article(
   //-     description="ああああああああああああああああああああああああああああああああああああああああああああああ"
   //-     image="/images/articles/record.jpg")
-  Section(color="white" title="無料でお試しできます")
+  Section(color="#F6F4F8" title="無料でお試しできます")
     v-img(src="/images/articles/devices.jpg")
     InstallButton
-  Section(color="#F6F4F8" title="収録楽曲")
+  Section(color="white" title="収録楽曲")
     RecordedSongs(:master="master")
 
   v-footer.text-center
@@ -55,11 +60,11 @@ export default {
     Section,
     AppBar,
     Article,
-    RecordedSongs
+    RecordedSongs,
   },
   data() {
     return {
-      master: {}
+      master: {},
     }
   },
   async mounted() {
@@ -67,7 +72,7 @@ export default {
       'https://d269pef58q3jdf.cloudfront.net/v1/master.json'
     )
     this.master = response
-  }
+  },
 }
 </script>
 <style scoped>

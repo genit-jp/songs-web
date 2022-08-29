@@ -45,7 +45,4 @@ export default {
 span {
   display: inline-block;
 }
-.articleBox {
-  padding: 2em;
-}
 </style>

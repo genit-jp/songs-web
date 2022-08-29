@@ -1,8 +1,8 @@
 <template lang="pug">
-  v-row(align="center" justify="center" style="margin:0; padding:0;")
-    v-col.articleBox.text-body-1(cols="12" md="6" :order="order(0)") 
+  v-row(align="center" justify="space-around" style="margin:0; padding:0;")
+    v-col.articleBox.text-body-1(cols="12" md="5" :order="order(0)") 
       div(v-html="description")
-    v-col.articleBox(cols="12" md="6" :order="order(1)")
+    v-col.articleBox(cols="10" md="5" :order="order(1)")
       v-img(:src="image")
 
 
@@ -40,6 +40,6 @@ span {
   display: inline-block;
 }
 .articleBox {
-  padding: 2em;
+  padding: 0.5em;
 }
 </style>

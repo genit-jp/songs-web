@@ -6,7 +6,7 @@ v-layout(
   AppBar
   TopImage
   InstallButton
-  Section(color="white" title="<span>流れる楽譜を見ながら</span><span>練習ができる</span>")
+  Section(color="white" title="<span>楽器演奏者のための</span><span>カラオケアプリ</span>")
     Article(
       description="再生ボタンを押すとその楽曲の伴奏が再生され、曲の進行に合わせて自動で楽譜が流れていきます。<br/>もちろん一時停止したり、カーソルを移動することで部分的に練習することもできます。"
       image="/images/articles/demo.jpg")

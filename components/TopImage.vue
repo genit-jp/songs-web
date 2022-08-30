@@ -3,7 +3,7 @@
     v-carousel(:height="height" cycle interval="5000" hide-delimiter-background :show-arrows="false")
       v-carousel-item(v-for="(image,i) in images" :key="i")
         div(:style="`width:100%; height:100%; background-size:cover; background-position:center; background-image:url(${image})`")
-          div.topText.font-weight-black.text-center.white--text(:style="`font-size:${textSize}px`" v-html="texts[i]")
+          div.topText.font-weight-black.text-center.white--text(:style="`font-size:${textSize}px; transform: translate(0, ${height/1.5}px)`" v-html="texts[i]")
     
 </template>
 
@@ -15,16 +15,16 @@ export default {
         '/images/top/0.jpg',
         '/images/top/1.jpg',
         '/images/top/2.jpg',
-        '/images/top/3.jpg'
+        '/images/top/3.jpg',
       ],
       texts: [
-        '楽器演奏者向けの<br/>カラオケアプリ',
-        '楽譜＆伴奏で<br/>楽しく演奏',
-        'J-POPからスタンダードまで<br/>幅広く収録！',
-        '調やテンポを<br/>カスタマイズ'
+        '<span>楽器演奏者向けの</span><span>カラオケアプリ</span>',
+        '<span>楽譜＆伴奏で</span><span>楽しく演奏</span>',
+        '<span>J-POPからスタンダードまで</span><span>幅広く収録！</span>',
+        '<span>調やテンポを</span><span>カスタマイズ</span>',
       ],
       height: 300,
-      textSize: 30
+      textSize: 30,
     }
   },
   async mounted() {
@@ -41,8 +41,8 @@ export default {
         this.height = 800
       }
       this.textSize = this.height / 10
-    }
-  }
+    },
+  },
 }
 </script>
 <style>
@@ -52,7 +52,6 @@ export default {
   align-items: center;
 }
 .topText {
-  transform: translate(0, 200%);
   text-shadow: 2px 2px 10px black;
 }
 </style>

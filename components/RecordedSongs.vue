@@ -1,11 +1,5 @@
 <template lang="pug">
-  v-sheet(color="white"
-          elevation="1"
-          rounded
-          shaped
-          width="100%"
-          style="padding:2em"
-          )
+  div
     div(v-for="(songs,category) in categoriedSongs" :key="category") 
       h3 {{category}}
       v-chip(color="primary" outlined style="margin: 2px;" v-for="(song,i) in songs" :key="i")
@@ -16,28 +10,28 @@
 <script>
 export default {
   props: {
-    master: { type: Object, default: {} }
+    master: { type: Object, default: {} },
   },
   data() {
     return {
-      songs: ''
+      songs: '',
     }
   },
   async mounted() {},
   computed: {
-    categoriedSongs: function() {
+    categoriedSongs: function () {
       const ret = {}
       if (this.master.home_page_categories && this.master.songs) {
         for (let category of this.master.home_page_categories) {
-          ret[category] = this.master.songs.filter(song =>
+          ret[category] = this.master.songs.filter((song) =>
             song.tags.includes(category)
           )
         }
       }
       return ret
-    }
+    },
   },
-  methods: {}
+  methods: {},
 }
 </script>
 

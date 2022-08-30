@@ -9,7 +9,7 @@ v-layout(
   Section(color="white" title="<span>楽器演奏者のための</span><span>カラオケアプリ</span>")
     Article(
       description="再生ボタンを押すとその楽曲の伴奏が再生され、曲の進行に合わせて自動で楽譜が流れていきます。<br/>もちろん一時停止したり、カーソルを移動することで部分的に練習することもできます。"
-      image="/images/articles/demo.jpg")
+      image="/images/articles/demo.gif")
   Section(color="#F6F4F8" title="<span>テンポを変えて</span><span>ゆっくりから練習</span>")
     Article(
       description="すべての曲のテンポを自由に変えることができます。<br/>ゆっくりからはじめ、徐々に早くしていく練習をすることができます。"
@@ -24,7 +24,7 @@ v-layout(
       description="移調楽器の設定をすると、伴奏のキーは変更せずに、表示される楽譜のキーのみを変更することができます。"
       image="/images/articles/instruments.jpg"
       swap=true)
-  Section(color="white" title="<span>楽曲は続々追加！</span><span>リクエストも受付中！</span>")
+  Section(color="white" title="<span>楽曲はリクエストから続々追加中！</span>")
     Article(
       description="あなたの演奏したい楽曲を是非教えて下さい！リクエストいただいた曲から日々続々と追加しています。"
       image="/images/articles/request.png"
@@ -34,7 +34,7 @@ v-layout(
   //-     description="ああああああああああああああああああああああああああああああああああああああああああああああ"
   //-     image="/images/articles/record.jpg")
   Section(color="#F6F4F8" title="無料でお試しできます")
-    v-img(src="/images/articles/devices.jpg")
+    v-img(src="/images/articles/devices.png")
     InstallButton
   Section(color="white" title="収録楽曲")
     RecordedSongs(:master="master")

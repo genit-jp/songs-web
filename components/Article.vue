@@ -1,8 +1,8 @@
 <template lang="pug">
   v-row(align="center" justify="space-around" style="margin:0; padding:0;")
-    v-col.articleBox.text-body-1(cols="12" md="5" :order="order(0)") 
+    v-col.articleBox.text-body-1.text-md-h6(v-if="description" cols="12" md="5" :order="order(0)") 
       div(v-html="description")
-    v-col.articleBox(cols="10" md="5" :order="order(1)")
+    v-col.articleBox(v-if="image" cols="10" md="5" :order="order(1)")
       v-img(:src="image")
 
 
@@ -14,7 +14,7 @@ export default {
     title: { type: String, default: '' },
     description: { type: String, default: '' },
     image: { type: String, default: '' },
-    swap: { type: Boolean, default: false }
+    swap: { type: Boolean, default: false },
   },
   data() {
     return {}
@@ -30,8 +30,8 @@ export default {
         }
       }
       return ret
-    }
-  }
+    },
+  },
 }
 </script>
 

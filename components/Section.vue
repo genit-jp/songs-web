@@ -13,8 +13,8 @@ export default {
   props: {
     id: { type: String, default: '' },
     color: { type: String, default: '' },
-    title: { type: String, default: '' }
-  }
+    title: { type: String, default: '' },
+  },
 }
 </script>
 <style></style>

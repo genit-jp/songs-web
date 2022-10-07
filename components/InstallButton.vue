@@ -2,14 +2,14 @@
   v-container(style="padding:0px;")
     v-row(align="center" justify="center" style="margin:0; padding:0;")
       v-col(cols="5")
-        a(href="" target="https://apps.apple.com/jp/app/id1565104504")
+        a(href="https://apps.apple.com/jp/app/id1565104504" target="_blank")
           v-img(
           src="images/badges/ios.svg"
           max-height="80"
           contain
         )
       v-col(cols="6")
-        a(href="" target="https://play.google.com/store/apps/details?id=jp.genit.songs")
+        a(href="https://play.google.com/store/apps/details?id=jp.genit.songs" target="_blank")
           v-img(
           src="images/badges/android.png"
           max-height="80"

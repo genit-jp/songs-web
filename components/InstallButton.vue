@@ -2,7 +2,7 @@
   v-container(style="padding:0px;")
     v-row(align="center" justify="center" style="margin:0; padding:0;")
       v-col(cols="5")
-        a(href="https://apps.apple.com/jp/app/id1565104504" target="_blank")
+        a(href="https://app.adjust.com/1ekwu8ns" target="_blank")
           v-img(
           src="images/badges/ios.svg"
           max-height="80"
